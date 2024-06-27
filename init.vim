@@ -66,8 +66,11 @@ call plug#end()
 call plug#begin()
 	Plug 'elvessousa/sobrio'
 call plug#end()
-colorscheme sobrio
-let g:airline_theme='sobrio'
+call plug#begin()
+  Plug 'rebelot/kanagawa.nvim'
+call plug#end()
+colorscheme kanagawa
+let g:airline_theme='dark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 " File browser
