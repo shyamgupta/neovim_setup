@@ -12,11 +12,21 @@
     "typescriptreact",
     "python"
   ],
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.local/bin/black",
+"inlayHint.enable": false,
+    "inlayHint.display": false,
+  {
+   "python.formatting.provider": "black",
+   "languageserver": {
+     "python": {
+       "formatting": {
+         "provider": "black"
+      },
+    "black": {
+      "enabled": true
+    }
+}
   "prettier.singleQuote": true,
   "javascript.autoClosingTags": true,
-  "typescript.autoClosingTags": true,
   "emmet.includeLanguages": [
     "javascript",
     "javascriptreact",
